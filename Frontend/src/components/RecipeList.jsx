@@ -4,7 +4,7 @@ const RecipeList = ({ recipes = [] }) => {
   return (
     <div className="recipe-list">
       {recipes.length === 0 ? (
-        <p>No recipes found.</p>
+        <p className="re">Please Search Your Favourite Recipes.</p>
       ) : (
         recipes.map((recipe) => <RecipeCard key={recipe.id} recipe={recipe} />)
       )}

@@ -17,7 +17,9 @@ body {
   color: #333;
   font-family: Arial, sans-serif;
 }
-
+.re{
+  color: red;
+}
 .header {
   display: flex;
   justify-content: center;

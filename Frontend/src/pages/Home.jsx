@@ -77,14 +77,33 @@ const Home = () => {
       console.error("Error fetching recipes:", error);
     }
   };
+
+  //   const [recipes, setRecipes] = useState([]);
+  // const [error, setError] = useState("");
+
+  // const handleSearch = async (query) => {
+  //   try {
+  //     setError("");
+  //     const results = await searchRecipes(query);
+  //     setRecipes(results);
+  //     if (results.length === 0) {
+  //       setError("No recipes found. Try a different search.");
+  //     }
+  //   } catch (err) {
+  //     setError(err.message);
+  //   }
+  // };
+
   return (
     <div className="bg-img">
       <div className="search-bar">
-        <h1 className="red">Please Search Your Favourite Recipes and Then Save in Your Profile</h1>
+        <h1 className="red">
+          Please Search Your Favourite Recipes and Then Save in Your Profile
+        </h1>
         <SearchBar onSearch={handleSearch} />
         <RecipeList recipes={recipes} />
       </div>
-      
+
       {/* <div className="home-recipe">
         {results.map((el, key) => (
           <div className="home-recipe-item"key={el.id}>
